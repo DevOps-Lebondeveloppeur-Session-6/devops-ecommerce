@@ -3,10 +3,10 @@ services:
   back:
     depends_on:
       - mongo
-    image: talel12/back-session6
+    image: talel12/e-commerce-back
     restart: always
     ports:
-      - 3000:3000
+      - 3001:3000
     environment:
       - MONGO_URI=mongodb://mongodb-user:mongodb-pass@mongo:27017/db-ecommerce?authSource=admin
       - PORT=3000
